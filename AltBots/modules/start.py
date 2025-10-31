@@ -8,11 +8,11 @@ START_BUTTON = [
         Button.inline("• ᴄᴏᴍᴍᴀɴᴅs •", data="help_back")
     ],
     [
-        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/SHONA_SPAM"),
-        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/SHONA_SPAM")
+        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/TOXIC_SPAM"),
+        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/TOXIC_SPAM")
     ],
     [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/spambotscoder/annuspam/fork")
+        Button.url("• ʀᴇᴘᴏ •", "TOXIC PAPA KA LUND LELE")
     ]
 ]
 
@@ -34,13 +34,13 @@ async def start(event):
         bot_name = AltBot.first_name
         bot_id = AltBot.id
         TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝐒𝐇𝐎𝐍𝐀](https://t.me/Theshonaqueen)**\n\n"
+        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [](t.me/ll_TOXICC_HU_ll)**\n\n"
         TEXT += f"» **xʙᴏᴛꜱ ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
         TEXT += f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `3.11.3`\n"
         TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
                     event.chat_id,
-                    "https://files.catbox.moe/mg5jsu.jpg",
+                    "https://files.catbox.moe/x8p4jm.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
                 )
