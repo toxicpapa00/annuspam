@@ -21,10 +21,10 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        altron = await e.reply(f"» __𝐒𝐇𝐎𝐍𝐀𝐐𝐔𝐄𝐄𝐍__")
+        altron = await e.reply(f"» __𝐓𝐎𝐗𝐈𝐂𝐏𝐀𝐏𝐀__")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"__🤖 ᴘɪɴɢ__\n» `αиσиумσυѕ ραρα нєяє αв кιѕкι gαи∂ мαяυ{mp} ᴍꜱ`")
+        await altron.edit(f"__🤖 ᴘɪɴɢ__\n» `ᴛᴏxɪᴄ ραρα нєяє αв кιѕкι gαи∂ мαяυ{mp} ᴍꜱ`")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -99,7 +99,7 @@ async def addsudo(event):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
-        ok = await event.reply(f"» __ᴄʜᴀʟ ᴛᴜᴊʜᴇ ᴀɴᴏɴʏᴍᴏᴜs ᴘᴀᴘᴀ ɴᴇ sᴜᴅᴏ ᴅᴇ ᴅɪʏᴀ ᴀꜱ...__")
+        ok = await event.reply(f"» __ᴄʜᴀʟ ᴛᴜᴊʜᴇ ᴛᴏxɪᴄ ᴘᴀᴘᴀ ɴᴇ sᴜᴅᴏ ᴅᴇ ᴅɪʏᴀ JA MOJ MAAR__")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -117,7 +117,7 @@ async def addsudo(event):
             return
 
         if str(target) in sudousers:
-            await ok.edit(f"ᴀʙᴇ ᴛᴜ ᴘʜᴇʟᴇ sᴇ ᴀɴᴏɴʏᴍᴏᴜs ʙᴀᴘᴘ ᴋᴇ sᴜᴅᴏ ᴍᴇ ʜᴀɪ !!")
+            await ok.edit(f"ᴀʙᴇ ᴛᴜ ᴘʜᴇʟᴇ sᴇ ᴛᴏxɪᴄ ʙᴀᴘᴘ ᴋᴇ sᴜᴅᴏ ᴍᴇ ʜᴀɪ !!")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
@@ -127,4 +127,4 @@ async def addsudo(event):
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("» ꜱᴏʀʀʏ, ʏᴇ ᴄᴏᴍᴍᴀɴᴅ ʙᴀss ᴛᴇʀᴀ ᴀɴᴏɴʏᴍᴏᴜs ʙᴀᴀᴘ ᴅᴇ sᴋᴛᴀ ʜᴀɪ.")
+        await event.reply("» ꜱᴏʀʀʏ, ʏᴇ ᴄᴏᴍᴍᴀɴᴅ ʙᴀss ᴛᴇʀᴀ ᴛᴏxɪᴄ ʙᴀᴀᴘ ᴅᴇ sᴋᴛᴀ ʜᴀɪ.")
